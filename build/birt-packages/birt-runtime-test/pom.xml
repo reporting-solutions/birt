@@ -2,13 +2,13 @@
 <!--
  *******************************************************************************
  * Copyright (c) 2021 Contributors to the Eclipse Foundation
- * 
+ *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0/.
- * 
+ *
  * SPDX-License-Identifier: EPL-2.0
- * 
+ *
  * Contributors:
  *   See git history
  *******************************************************************************
@@ -21,7 +21,7 @@
 		<version>4.23.0-SNAPSHOT</version>
 		<relativePath>..</relativePath>
 	</parent>
-	<groupId>org.eclipse.birt</groupId>
+	<groupId>io.github.reporting-solutions</groupId>
 	<artifactId>birt-runtime-test</artifactId>
 	<packaging>jar</packaging>
 	<properties>
@@ -51,7 +51,7 @@
 						<configuration>
 							<artifactItems>
 								<artifactItem>
-									<groupId>org.eclipse.birt</groupId>
+									<groupId>io.github.reporting-solutions</groupId>
 									<artifactId>birt-runtime</artifactId>
 									<version>${project.version}</version>
 									<type>zip</type>
@@ -60,7 +60,7 @@
 									<outputDirectory>${project.build.directory}/birt-runtime</outputDirectory>
 								</artifactItem>
 								<artifactItem>
-									<groupId>org.eclipse.birt</groupId>
+									<groupId>io.github.reporting-solutions</groupId>
 									<artifactId>birt-runtime-osgi</artifactId>
 									<version>${project.version}</version>
 									<type>zip</type>
