@@ -56,7 +56,21 @@
 		<org.eclipse.justj.p2.manager.extra.args></org.eclipse.justj.p2.manager.extra.args>
 		<org.eclipse.justj.p2.manager.relative>updates</org.eclipse.justj.p2.manager.relative>
 		<org.eclipse.justj.p2.manager.build.url>http://www.example.com/</org.eclipse.justj.p2.manager.build.url>
-	</properties>
+        <oss.nexus.release>https://oss.sonatype.org/service/local/staging/deploy/maven2</oss.nexus.release>
+        <oss.nexus.snapshot>https://oss.sonatype.org/content/repositories/snapshots</oss.nexus.snapshot>
+    </properties>
+	<distributionManagement>
+	    <repository>
+	      <id>oss-release</id>
+	      <name>oss-release</name>
+	      <url>${oss.nexus.release}</url>
+	    </repository>
+	    <snapshotRepository>
+	      <id>oss-snapshot</id>
+	      <name>oss-snapshot</name>
+	      <url>${oss.nexus.snapshot}</url>
+	    </snapshotRepository>
+	  </distributionManagement>
 
 	<!-- make release builds in particular quicker and more reliable -->
 	<profiles>
@@ -254,7 +268,7 @@
 					<targetDefinitionIncludeSource>honor</targetDefinitionIncludeSource>
 					<target>
 						<artifact>
-							<groupId>org.eclipse.birt</groupId>
+							<groupId>io.github.reporting-solutions</groupId>
 							<artifactId>org.eclipse.birt.target</artifactId>
 							<version>4.23.0-SNAPSHOT</version>
 						</artifact>
