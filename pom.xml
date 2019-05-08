@@ -61,12 +61,12 @@
     </properties>
 	<distributionManagement>
 	    <repository>
-	      <id>oss-release</id>
+	      <id>ossrh</id>
 	      <name>oss-release</name>
 	      <url>${oss.nexus.release}</url>
 	    </repository>
 	    <snapshotRepository>
-	      <id>oss-snapshot</id>
+	      <id>ossrh</id>
 	      <name>oss-snapshot</name>
 	      <url>${oss.nexus.snapshot}</url>
 	    </snapshotRepository>
