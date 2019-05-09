@@ -22,7 +22,7 @@
 		<relativePath>../</relativePath>
 	</parent>
 
-	<groupId>org.eclipse.birt.core</groupId>
+	<groupId>io.github.reporting-solutions.core</groupId>
 	<artifactId>org.eclipse.birt.core-parent</artifactId>
 	<packaging>pom</packaging>
 

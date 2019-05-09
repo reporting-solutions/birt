@@ -22,7 +22,7 @@
 		<relativePath>../</relativePath>
 	</parent>
 
-	<groupId>org.eclipse.birt.xtab</groupId>
+	<groupId>io.github.reporting-solutions.xtab</groupId>
 	<artifactId>org.eclipse.birt.xtab-parent</artifactId>
 	<packaging>pom</packaging>
 

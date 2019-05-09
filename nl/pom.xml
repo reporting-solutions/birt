@@ -23,7 +23,7 @@
 		<relativePath>../</relativePath>
 	</parent>
 
-	<groupId>org.eclipse.birt.nl</groupId>
+	<groupId>io.github.reporting-solutions.nl</groupId>
 	<artifactId>org.eclipse.birt.nl-parent</artifactId>
 	<packaging>pom</packaging>
 

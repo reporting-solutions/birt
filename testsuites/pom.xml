@@ -23,7 +23,7 @@
 		<relativePath>../</relativePath>
 	</parent>
 
-	<groupId>org.eclipse.birt.testsuites</groupId>
+	<groupId>io.github.reporting-solutions.testsuites</groupId>
 	<artifactId>org.eclipse.birt.testsuites-parent</artifactId>
 	<packaging>pom</packaging>
 

@@ -22,7 +22,7 @@
 		<relativePath>../</relativePath>
 	</parent>
 
-	<groupId>org.eclipse.birt.viewer</groupId>
+	<groupId>io.github.reporting-solutions.viewer</groupId>
 	<artifactId>org.eclipse.birt.viewer-parent</artifactId>
 	<packaging>pom</packaging>
 
