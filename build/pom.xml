@@ -1,13 +1,13 @@
 <!--
  *******************************************************************************
  * Copyright (c) 2021 Contributors to the Eclipse Foundation
- * 
+ *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0/.
- * 
+ *
  * SPDX-License-Identifier: EPL-2.0
- * 
+ *
  * Contributors:
  *   See git history
  *******************************************************************************
@@ -34,6 +34,6 @@
 		<module>birt-packages</module>
 		<module>org.eclipse.birt.api</module>
 		<module>org.eclipse.birt.build</module>
-		<module>org.eclipse.birt.p2updatesite</module>
+<!--		<module>org.eclipse.birt.p2updatesite</module>-->
 	</modules>
 </project>
