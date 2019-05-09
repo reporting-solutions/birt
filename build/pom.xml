@@ -34,6 +34,6 @@
 		<module>birt-packages</module>
 		<module>org.eclipse.birt.api</module>
 		<module>org.eclipse.birt.build</module>
-<!--		<module>org.eclipse.birt.p2updatesite</module>-->
+		<module>org.eclipse.birt.p2updatesite</module>
 	</modules>
 </project>
