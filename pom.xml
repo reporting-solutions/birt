@@ -58,21 +58,8 @@
 		<org.eclipse.justj.p2.manager.extra.args></org.eclipse.justj.p2.manager.extra.args>
 		<org.eclipse.justj.p2.manager.relative>updates</org.eclipse.justj.p2.manager.relative>
 		<org.eclipse.justj.p2.manager.build.url>http://www.example.com/</org.eclipse.justj.p2.manager.build.url>
-        <oss.nexus.release>https://oss.sonatype.org/service/local/staging/deploy/maven2</oss.nexus.release>
-        <oss.nexus.snapshot>https://oss.sonatype.org/content/repositories/snapshots</oss.nexus.snapshot>
     </properties>
-	<distributionManagement>
-	    <repository>
-	      <id>ossrh</id>
-	      <name>oss-release</name>
-	      <url>${oss.nexus.release}</url>
-	    </repository>
-	    <snapshotRepository>
-	      <id>ossrh</id>
-	      <name>oss-snapshot</name>
-	      <url>${oss.nexus.snapshot}</url>
-	    </snapshotRepository>
-	  </distributionManagement>
+
 	<developers>
 		<developer>
 			<id>tobeadd</id>
