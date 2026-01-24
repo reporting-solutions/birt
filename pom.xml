@@ -506,7 +506,7 @@
 				<version>0.10.0</version>
 				<extensions>true</extensions>
 				<configuration>
-					<publishingServerId>ossrh</publishingServerId>
+					<publishingServerId>central</publishingServerId>
 				</configuration>
 			</plugin>
 		</plugins>
