@@ -30,7 +30,7 @@ jobs:
         gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
         gpg-passphrase: GPG_PASSWORD
     - name: Publish to Maven Central
-      run: mvn clean deploy --no-transfer-progress -DskipTests
+      run: mvn -e clean deploy --no-transfer-progress -DskipTests
       env:
         SONATYPE_USERNAME: ${{ secrets.OSSRH_USERNAME }}
         SONATYPE_PASSWORD: ${{ secrets.OSSRH_TOKEN }}
