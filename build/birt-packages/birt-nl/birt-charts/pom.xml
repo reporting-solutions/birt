@@ -35,7 +35,7 @@
 						<phase>package</phase>
 						<configuration>
 							<target>
-								<unzip src="../../../org.eclipse.birt.p2updatesite/target/org.eclipse.birt.p2updatesite-${birt.version}-SNAPSHOT.zip" dest="${project.build.directory}/p2updatesite" />
+								<unzip src="../../../org.eclipse.birt.p2updatesite/target/org.eclipse.birt.p2updatesite-${birt.version}.zip" dest="${project.build.directory}/p2updatesite" />
 								<copy todir="${project.build.directory}/content/ChartRuntime/eclipse/plugins">
 									<fileset dir="${project.build.directory}/p2updatesite/plugins">
 										<include name="org.eclipse.birt.chart.device.extension.nl1_*.jar" />
