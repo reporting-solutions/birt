@@ -21,7 +21,7 @@
 		<version>4.23.0</version>
 		<relativePath>../</relativePath>
 	</parent>
-	<groupId>org.eclipse.birt</groupId>
+	<groupId>io.github.reporting-solutions</groupId>
 	<artifactId>org.eclipse.birt.branding</artifactId>
     <version>4.23.0</version>
 	<packaging>eclipse-plugin</packaging>

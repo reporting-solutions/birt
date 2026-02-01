@@ -17,22 +17,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v5
-    - name: Set up OpenJDK 21 
-      uses: actions/setup-java@v5
-      with:
-        distribution: 'temurin'
-        java-version: '21'
-        server-id: central
-        server-username: SONATYPE_USERNAME
-        server-password: SONATYPE_PASSWORD
-        gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
-        gpg-passphrase: GPG_PASSWORD
-    - name: Publish to Maven Central
-      run: mvn -e clean deploy --no-transfer-progress -DskipTests
-      env:
-        SONATYPE_USERNAME: ${{ secrets.OSSRH_USERNAME }}
-        SONATYPE_PASSWORD: ${{ secrets.OSSRH_TOKEN }}
-        GPG_PASSWORD: ${{ secrets.GPG_PASSWORD }}
-      
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Cleanup runner caches (free space)
+        run: curl -fsSL https://raw.githubusercontent.com/kou/arrow/e49d8ae15583ceff03237571569099a6ad62be32/ci/scripts/util_free_space.sh | bash
+
+      - name: Set up OpenJDK 21
+        uses: actions/setup-java@v5
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+          cache: maven
+          server-id: central
+          server-username: SONATYPE_USERNAME
+          server-password: SONATYPE_PASSWORD
+          gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
+          gpg-passphrase: GPG_PASSWORD
+      - name: Publish to Maven Central
+        run: mvn -B -ntp clean deploy -DskipTests
+        env:
+          SONATYPE_USERNAME: ${{ secrets.OSSRH_USERNAME }}
+          SONATYPE_PASSWORD: ${{ secrets.OSSRH_TOKEN }}
+          GPG_PASSWORD: ${{ secrets.GPG_PASSWORD }}

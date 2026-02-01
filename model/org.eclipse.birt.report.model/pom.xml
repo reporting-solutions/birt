@@ -24,6 +24,8 @@
 	<groupId>io.github.reporting-solutions</groupId>
 	<artifactId>org.eclipse.birt.report.model</artifactId>
 	<packaging>eclipse-plugin</packaging>
+
+	<name>${project.groupId}:${project.artifactId}</name>
 	<build>
 		<plugins>
 			<plugin>

@@ -152,16 +152,16 @@
 		<module>core</module>
 		<module>data</module>
 		<!-- build issue inside -->
-		<module>docs</module>
+		<!--		<module>docs</module>-->
 		<module>engine</module>
 		<!-- sdk/test features build issue, test features installation -->
 		<module>features</module>
 		<module>model</module>
 		<!-- build issue inside -->
-		<module>nl</module>
+		<!--		<module>nl</module>-->
 		<!-- report.viewer.tests build issue, and how to run tests.xxx plugins -->
-		<module>testsuites</module>
-		<module>UI</module>
+		<!--		<module>testsuites</module>-->
+		<!--		<module>UI</module>-->
 		<module>viewer</module>
 		<module>xtab</module>
 	</modules>
@@ -507,6 +507,110 @@
 				<extensions>true</extensions>
 				<configuration>
 					<publishingServerId>central</publishingServerId>
+					<excludeArtifacts>
+<!--						<artifact>org.eclipse.birt-parent</artifact>-->
+						<artifact>org.eclipse.birt.build-parent</artifact>
+						<artifact>org.eclipse.birt.build.package-parent</artifact>
+						<artifact>birt-charts</artifact>
+						<artifact>ChartRuntime</artifact>
+						<artifact>ChartSDK</artifact>
+						<artifact>DeploymentRuntime</artifact>
+						<artifact>org.eclipse.birt.build.package.nl-parent</artifact>
+						<!--						<artifact>birt-report-all-in-one</artifact>-->
+						<artifact>birt-report-framework</artifact>
+						<artifact>birt-report-framework-sdk</artifact>
+						<artifact>birt-runtime</artifact>
+						<artifact>birt-runtime-osgi</artifact>
+						<artifact>birt-runtime-test</artifact>
+						<artifact>birt-sample-plugins</artifact>
+						<artifact>birt-tests-suite</artifact>
+						<artifact>org.eclipse.birt</artifact>
+						<artifact>org.eclipse.birt.api</artifact>
+						<artifact>org.eclipse.birt.build</artifact>
+						<artifact>org.eclipse.birt.example</artifact>
+						<artifact>org.eclipse.birt.p2updatesite</artifact>
+						<artifact>org.eclipse.birt.target</artifact>
+						<artifact>org.eclipse.birt.chart-parent</artifact>
+						<artifact>org.eclipse.birt.chart.device.swt</artifact>
+						<artifact>org.eclipse.birt.chart.examples</artifact>
+						<artifact>org.eclipse.birt.chart.integration.wtp.ui</artifact>
+						<artifact>org.eclipse.birt.chart.reportitem.ui</artifact>
+						<artifact>org.eclipse.birt.chart.tests</artifact>
+						<artifact>org.eclipse.birt.chart.ui</artifact>
+						<artifact>org.eclipse.birt.chart.ui.extension</artifact>
+						<artifact>org.eclipse.birt.chart.viewer</artifact>
+<!--						<artifact>org.eclipse.birt.core-parent</artifact>-->
+						<artifact>org.eclipse.birt.branding</artifact>
+						<artifact>org.eclipse.birt.core.testhelper</artifact>
+						<artifact>org.eclipse.birt.core.tests</artifact>
+						<artifact>org.eclipse.birt.core.ui</artifact>
+						<artifact>org.eclipse.birt.data-parent</artifact>
+						<artifact>org.eclipse.birt.data.oda.mongodb.ui</artifact>
+						<artifact>org.eclipse.birt.data.oda.pojo.tests</artifact>
+						<artifact>org.eclipse.birt.data.tests</artifact>
+						<artifact>org.eclipse.birt.report.data.bidi.utils.ui</artifact>
+						<artifact>org.eclipse.birt.data.oda.pojo.ui</artifact>
+						<artifact>org.eclipse.birt.report.data.oda.excel.ui</artifact>
+						<artifact>org.eclipse.birt.report.data.oda.hive.ui</artifact>
+						<artifact>org.eclipse.birt.report.data.oda.jdbc.dbprofile.sampledb.ui</artifact>
+						<artifact>org.eclipse.birt.report.data.oda.jdbc.dbprofile.ui</artifact>
+						<artifact>org.eclipse.birt.report.data.oda.jdbc.tests</artifact>
+						<artifact>org.eclipse.birt.report.data.oda.jdbc.ui</artifact>
+						<artifact>org.eclipse.birt.report.data.oda.sampledb.ui</artifact>
+						<artifact>org.eclipse.birt.report.data.oda.xml.ui</artifact>
+						<artifact>org.eclipse.birt.docs-parent</artifact>
+						<artifact>org.eclipse.birt.chart.cshelp</artifact>
+						<artifact>org.eclipse.birt.chart.doc.isv</artifact>
+						<artifact>org.eclipse.birt.cshelp</artifact>
+						<artifact>org.eclipse.birt.doc</artifact>
+						<artifact>org.eclipse.birt.doc.isv</artifact>
+						<artifact>org.eclipse.birt.engine-parent</artifact>
+						<artifact>org.eclipse.birt.report.engine.dataextraction.csv.tests</artifact>
+						<artifact>org.eclipse.birt.report.engine.emitter.html.tests</artifact>
+						<artifact>org.eclipse.birt.report.engine.emitter.pdf.tests</artifact>
+						<artifact>org.eclipse.birt.report.engine.emitter.postscript.tests</artifact>
+						<artifact>org.eclipse.birt.report.engine.emitter.pptx.tests</artifact>
+						<artifact>org.eclipse.birt.report.engine.emitter.prototype.excel.tests</artifact>
+						<artifact>org.eclipse.birt.report.engine.testhelper</artifact>
+						<artifact>org.eclipse.birt.report.engine.tests</artifact>
+						<artifact>uk.co.spudsoft.birt.emitters.excel.tests</artifact>
+						<artifact>org.eclipse.birt.features-parent</artifact>
+						<artifact>org.eclipse.birt.chart</artifact>
+						<artifact>org.eclipse.birt.chart.integration.wtp</artifact>
+						<artifact>org.eclipse.birt.chart.osgi.runtime</artifact>
+						<artifact>org.eclipse.birt.chart.osgi.runtime.sdk</artifact>
+						<artifact>org.eclipse.birt.engine.runtime</artifact>
+						<artifact>org.eclipse.birt.integration.wtp</artifact>
+						<artifact>org.eclipse.birt.integration.wtp.sdk</artifact>
+						<artifact>org.eclipse.birt.integration.wtp.sdk</artifact>
+						<artifact>org.eclipse.birt.osgi.runtime</artifact>
+						<artifact>org.eclipse.birt.osgi.runtime.sdk</artifact>
+						<artifact>org.eclipse.birt.rcp</artifact>
+						<artifact>org.eclipse.birt.rcp.nl</artifact>
+						<artifact>org.eclipse.birt.report.designer.editor.xml.wtp</artifact>
+						<artifact>org.eclipse.birt.sdk</artifact>
+						<artifact>org.eclipse.birt.testhelper</artifact>
+						<artifact>org.eclipse.birt.tests</artifact>
+						<artifact>org.eclipse.birt.wtp.nl</artifact>
+<!--						<artifact>org.eclipse.birt.model-parent</artifact>-->
+						<artifact>org.eclipse.birt.nl</artifact>
+						<artifact>org.eclipse.birt.report.model.adapter.oda.tests</artifact>
+						<artifact>org.eclipse.birt.resources</artifact>
+						<artifact>org.eclipse.birt.report.model.testhelper</artifact>
+						<artifact>org.eclipse.birt.report.model.testresources</artifact>
+						<artifact>org.eclipse.birt.report.model.tests</artifact>
+						<artifact>org.eclipse.birt.report.modelextension.tests</artifact>
+						<artifact>org.eclipse.birt.nl-parent</artifact>
+						<artifact>org.eclipse.birt.testsuites-parent</artifact>
+						<artifact>org.eclipse.birt.UI-parent</artifact>
+						<artifact>org.eclipse.birt.integration.wtp.ui</artifact>
+						<artifact>org.eclipse.birt.viewer-parent</artifact>
+						<artifact>org.eclipse.birt.report.viewer</artifact>
+						<artifact>org.eclipse.birt.report.viewer.tests</artifact>
+						<artifact>org.eclipse.birt.xtab-parent</artifact>
+						<artifact>org.eclipse.birt.report.item.crosstab.core.tests</artifact>
+						<artifact>org.eclipse.birt.report.item.crosstab.ui</artifact>
+					</excludeArtifacts>
 				</configuration>
 			</plugin>
 		</plugins>
